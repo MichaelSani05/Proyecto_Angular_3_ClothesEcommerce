@@ -2,6 +2,14 @@
     background-color: #B7906F;
 }
 
+body{
+    height: 100%;
+}
+
+.main{
+    height: 100%;
+}
+
 body > app-root{
     background-color: #B7906F;
 }
