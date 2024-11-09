@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SliderComponent } from '../slider/slider.component';
 
 @Component({
@@ -9,5 +9,6 @@ import { SliderComponent } from '../slider/slider.component';
   styleUrl: './banner.component.css'
 })
 export class BannerComponent {
-
+  @Input() title: String = "";
+  @Input() desc: String = "";
 }

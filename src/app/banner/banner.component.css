@@ -12,6 +12,7 @@
 }
 
 #banner-texts{
+    width: 80%;
     position: absolute;
     top: 40%;
     display: flex;

@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
     imports: [NgFor]
 })
 export class SliderComponent implements OnInit {
-    marcas: string[] = ['Marca 1', 'Marca 2', 'Marca 3', 'Marca 4', 'Marca 5'];
+    marcas: string[] = ['../../assets/images/hermes-LOGO-2.png', '../../assets/images/zara-LOGO-2.png', '../../assets/images/puma-LOGO-2.png', '../../assets/images/nike-LOGO-2.png', '../../assets/images/adidas-LOGO-2.png'];
     
     constructor() {}
 

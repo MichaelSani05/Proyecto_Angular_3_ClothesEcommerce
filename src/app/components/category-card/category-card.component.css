@@ -1,0 +1,21 @@
+.category-card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  h3 {
+    margin: 0;
+    color: #333;
+    text-transform: capitalize;
+  }

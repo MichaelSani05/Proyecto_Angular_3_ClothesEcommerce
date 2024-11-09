@@ -9,5 +9,6 @@ import { BannerComponent } from '../banner/banner.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  title: String = "Calidad y Estilo en Cada Prenda";
+  desc: String = "Nos apasiona la moda. Descubre nuestra selección cuidadosamente diseñada para ofrecerte estilo, comodidad y durabilidad en cada look.";
 }
