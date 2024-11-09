@@ -4,9 +4,13 @@
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.2s;
-    background-color: #f5f5f5;
+    background-color: #6f9ab7;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .category-card:hover {
@@ -16,6 +20,6 @@
 
   h3 {
     margin: 0;
-    color: #333;
+    color: white;
     text-transform: capitalize;
   }

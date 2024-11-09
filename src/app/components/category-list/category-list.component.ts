@@ -14,7 +14,7 @@ import { Category } from '../../interfaces/category.interface';
 })
 export class CategoryListComponent implements OnInit {
   categoryNames: string[] = [];
-  categorySlugs: String[] = [];
+  categorySlugs: string[] = [];
   loading: boolean = true;
 
   constructor(private productService: ProductService) {}
@@ -27,7 +27,6 @@ export class CategoryListComponent implements OnInit {
     this.loading = true;
     this.productService.getCategories().subscribe({
       next: (categories: Category[]) => {
-        // Extraemos solo los nombres de las categorías
         this.categoryNames = categories.map(category => category.name);
         this.categorySlugs = categories.map(category => category.slug);
         console.log(this.categoryNames);
