@@ -30,6 +30,12 @@ export class CategoryListComponent implements OnInit {
         this.categoryNames = categories.map(category => category.name);
         this.categorySlugs = categories.map(category => category.slug);
         console.log(this.categoryNames);
+        this.categoryNames.splice(0, 7);
+        console.log(this.categoryNames);
+        this.categoryNames.splice(3, 4);
+        this.categoryNames.splice(5, 1);
+        this.categoryNames.splice(6, 1);
+        console.log(this.categoryNames);
         console.log(this.categorySlugs);
         this.loading = false;
       },
