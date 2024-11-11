@@ -32,9 +32,9 @@ export class CategoryListComponent implements OnInit {
         console.log(this.categoryNames);
         this.categoryNames.splice(0, 7);
         console.log(this.categoryNames);
-        this.categoryNames.splice(3, 4);
+        this.categoryNames.splice(3, 5);
+        this.categoryNames.splice(4, 1);
         this.categoryNames.splice(5, 1);
-        this.categoryNames.splice(6, 1);
         console.log(this.categoryNames);
         console.log(this.categorySlugs);
         this.loading = false;

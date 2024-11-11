@@ -1,0 +1,28 @@
+<main class="main">
+    <div id="categories">
+        <app-banner [title]="title" [desc]="desc"/>
+        <div id="page-content">
+            <div id="men-women-others">
+                <a [routerLink]="[ '/men']">
+                    <div class="mwo">
+                        <span>MEN</span>
+                        <img src="../../assets/images/men-category.webp" alt="">
+                    </div>
+                </a>
+                <a [routerLink]="[ '/women']">
+                    <div class="mwo">
+                        <span>WOMEN</span>
+                        <img src="../../assets/images/women-category.webp" alt="">
+                    </div>
+                </a>
+                <a [routerLink]="[ '/categories']">
+                    <div class="mwo">
+                        <span>ACCESSORIES</span>
+                        <img src="../../assets/images/accesories-category.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            <app-category-list/>
+        </div>
+    </div>
+</main>

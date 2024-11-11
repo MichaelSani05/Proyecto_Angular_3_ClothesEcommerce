@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { BannerComponent } from '../banner/banner.component';
-import { ProductListComponent } from '../components/product-list/product-list.component';
+import { BannerComponent } from '../../components/banner/banner.component';
+import { ProductListComponent } from '../../components/product-list/product-list.component';
 
 @Component({
   selector: 'app-products',

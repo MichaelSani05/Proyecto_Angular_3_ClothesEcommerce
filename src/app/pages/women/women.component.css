@@ -1,0 +1,113 @@
+.main{
+    background-color: #ecabd6;
+}
+
+#women{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#page-content{
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    max-width: 1399px;
+    margin: -50px auto 0px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+#women-styles{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.women-style{
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+.women-style img{
+    width: 100%;
+    height: 100%;
+}
+
+.women-style span{
+    font-size: 18pt;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+.brand{
+    padding: 30px 0px 10px 10px;
+    font-size: 34pt;
+    font-weight: 600;
+}
+
+.brand svg{
+    margin-top: -10px;
+}
+
+#women-products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.women-product img{
+    width: 100%;
+}
+
+.women-product .product-img-2{
+    display: none;
+}
+
+.women-product:hover .product-img-1{
+    display: none;
+}
+
+.women-product:hover .product-img-2{
+    display: block;
+}
+
+.product-texts{
+    margin-top: 10px;
+}
+
+.product-texts p{
+    margin: 0;
+    font-size: 10pt;
+    color: black;
+}
+
+.product-texts p:first-child, .product-texts p:last-child{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 880px){
+    #women-products{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .brand{
+        font-size: 20pt;
+    }
+}
