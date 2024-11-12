@@ -18,3 +18,52 @@
     padding: 20px;
     z-index: 2;
 }
+
+#men-products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.men-product img{
+    width: 100%;
+}
+
+.men-product .product-img-2{
+    display: none;
+}
+
+.men-product:hover .product-img-1{
+    display: none;
+}
+
+.men-product:hover .product-img-2{
+    display: block;
+}
+
+.product-texts{
+    margin-top: 10px;
+}
+
+.product-texts p{
+    margin: 0;
+    font-size: 10pt;
+    color: black;
+}
+
+.product-texts p:first-child, .product-texts p:last-child{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 880px){
+    #men-products{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .brand{
+        font-size: 20pt;
+    }
+}

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BannerComponent } from '../../components/banner/banner.component';
+import { SliderComponent } from '../../components/slider/slider.component';
 
 @Component({
   selector: 'app-women',
   standalone: true,
-  imports: [BannerComponent],
+  imports: [SliderComponent],
   templateUrl: './women.component.html',
   styleUrl: './women.component.css'
 })

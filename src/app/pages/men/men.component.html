@@ -1,6 +1,6 @@
 <main class="main">
     <div id="men">
-        <app-banner [title]="title" [desc]="desc"/>
+        <app-slider/>
         <div id="page-content">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
@@ -52,52 +52,7 @@
             <div class="brand">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 512 512"><path fill="black" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg> TE PUEDE INTERESAR
             </div>
-            <div id="men-products">
-                <a href="">
-                    <div class="men-product">
-                        <img class="product-img-1" src="../../../assets/images/men-product-1.jpg" alt="">
-                        <img  class="product-img-2" src="../../../assets/images/men-product-1-2.jpg" alt="">
-                        <div class="product-texts">
-                            <p>COMBO WINS %</p>
-                            <p>Sudadera cremallera print</p>
-                            <p>25,99€</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="men-product">
-                        <img class="product-img-1" src="../../../assets/images/men-product-2.jpg" alt="">
-                        <img  class="product-img-2" src="../../../assets/images/men-product-2-2.jpg" alt="">
-                        <div class="product-texts">
-                            <p>CASUAL</p>
-                            <p>Jeans loose baggy</p>
-                            <p>29,99€</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="men-product">
-                        <img class="product-img-1" src="../../../assets/images/men-product-3.jpg" alt="">
-                        <img  class="product-img-2" src="../../../assets/images/men-product-3-2.jpg" alt="">
-                        <div class="product-texts">
-                            <p>BASIC</p>
-                            <p>Sudadera capucha</p>
-                            <p>19,99€</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="men-product">
-                        <img class="product-img-1" src="../../../assets/images/men-product-4.jpg" alt="">
-                        <img  class="product-img-2" src="../../../assets/images/men-product-4-2.jpg" alt="">
-                        <div class="product-texts">
-                            <p>TRENDY</p>
-                            <p>Pantalón interlock lavado</p>
-                            <p>19,99€</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            <app-products/>
         </div>
     </div>
 </main>

@@ -5,15 +5,14 @@
 #men{
     width: 100%;
     height: 100%;
-    padding-bottom: 50px;
+    padding: 100px 0px 50px 0px;
 }
 
 #page-content{
     overflow: hidden;
     position: relative;
     width: 90%;
-    max-width: 1399px;
-    margin: -50px auto 0px auto;
+    margin: 20px auto;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
@@ -27,7 +26,6 @@
 #men-styles{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-height: 420px;
     border-radius: 10px;
     overflow: hidden;
 }

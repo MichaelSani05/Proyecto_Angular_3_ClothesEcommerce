@@ -1,8 +1,15 @@
-<main class="main">
-    <div id="products">
-        <app-banner [title]="title" [desc]="desc"/>
-        <div id="page-content">
-            <app-product-list/>
-        </div>
+<div id="men-products">
+    <div class="product" *ngFor="let producto of productos">
+        <a [routerLink]="['/producto', producto.id]">
+            <div class="men-product">
+                <img class="product-img-1" src="{{ producto.img1 }}" alt="">
+                <img  class="product-img-2" src="{{ producto.img2 }}" alt="">
+                <div class="product-texts">
+                    <p>{{ producto.category }}</p>
+                    <p>{{ producto.name }}</p>
+                    <p>{{ producto.price }}</p>
+                </div>
+            </div>
+        </a>
     </div>
-</main>
+</div>

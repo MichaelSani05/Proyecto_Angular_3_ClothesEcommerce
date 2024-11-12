@@ -21,14 +21,8 @@ a{
     color: inherit !important;
 }
 
-.link-active, .link-active path, .link-active circle, #home-link button{
-    font-weight: bolder;
-    color: black !important;
-    stroke: black !important;
-}
-
-.nav-link1 > svg > path{
-    fill: black !important;
+.link-active, .link-active button{
+    font-weight: bold;
     color: black !important;
 }
 

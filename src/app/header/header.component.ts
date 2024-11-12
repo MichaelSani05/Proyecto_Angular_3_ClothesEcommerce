@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faMars, faVenus, faRectangleList, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,4 +11,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  faMars = faMars
+  faVenus = faVenus
+  faRectangleList = faRectangleList
+  faHouse = faHouse
 }

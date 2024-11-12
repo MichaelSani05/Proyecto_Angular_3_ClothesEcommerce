@@ -1,1 +1,30 @@
-<p>product works!</p>
+<main class="main">
+    <div id="producto">
+        <app-slider/>
+        <div class="product">
+            <div class="product-images">
+                <img src="{{ product.img1 }}" alt="{{ product.name }}" class="product-image">
+                <img src="{{ product.img2 }}" alt="{{ product.name }}" class="product-image">
+            </div>
+            <div class="product-details">
+                <p class="product-description"> {{ product.category }} </p>
+                <h1 class="product-title">{{ product.name }}</h1>
+                <p class="product-description"> {{ product.description }} </p>
+                <p class="product-price">Precio: {{ product.price }}</p>
+                <p class="product-stock">Stock disponible: {{ product.stock }}</p>
+                <div class="size-selector">
+                    <p>Tallas:</p>
+                    <input type="radio" id="size-s" name="size" value="S">
+                    <label for="size-s">S</label>
+                    <input type="radio" id="size-m" name="size" value="M">
+                    <label for="size-m">M</label>
+                    <input type="radio" id="size-l" name="size" value="L">
+                    <label for="size-l">L</label>
+                    <input type="radio" id="size-xl" name="size" value="XL">
+                    <label for="size-xl">XL</label>
+                </div>
+                <button class="buy-button">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</main>
