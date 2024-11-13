@@ -1,7 +1,7 @@
 // product-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { Product, ProductResponse } from '../../interfaces/product.interface';
 
@@ -10,7 +10,7 @@ import { Product, ProductResponse } from '../../interfaces/product.interface';
   standalone: true,
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, RouterLink]
 })
 
 export class ProductListComponent implements OnInit {

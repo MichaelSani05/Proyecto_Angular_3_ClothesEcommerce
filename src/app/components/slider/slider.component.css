@@ -7,6 +7,9 @@
 .slider-container {
     overflow: hidden;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider {
@@ -33,5 +36,12 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 760px){
+    .slide{
+        max-width: 30%;
+        height: 50px;
     }
 }

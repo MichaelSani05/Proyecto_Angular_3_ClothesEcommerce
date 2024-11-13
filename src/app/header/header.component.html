@@ -1,5 +1,4 @@
 <div id="header">
-    <a id="logo"><img src="../../assets/images/white-LOGO.png" alt=""></a>
     <div id="nav">
         <a href="" [routerLink]="[ '/home']" id="home-link" [routerLinkActive]="['link-active']">
             <button type="button" class="shadow"><fa-icon class="link-icon" [icon]="faHouse"></fa-icon>Home</button>
@@ -21,6 +20,7 @@
                 </a>
             </li>
         </ul>
-        <a href="" id="profile"><img src="../../assets/images/white-LOGO.png" alt="" width="30px"></a>
+        <button (click)="toggleCart()" id="cart"><fa-icon class="cart-icon" [icon]="faCartShopping"></fa-icon></button>
+        <app-cart/>
     </div>
 </div>

@@ -9,6 +9,7 @@
     z-index: 99;
 }
 
+
 #logo{
     position: absolute;
     left: 20px;
@@ -33,6 +34,7 @@
     backdrop-filter: blur(11px) saturate(170%);
     -webkit-backdrop-filter: blur(11px) saturate(170%);
     background-color: rgba(150, 150, 150, 0.7);
+    align-items: center;
 }
 
 .nav-link{
@@ -66,4 +68,33 @@ a{
     border: none;
     color: black;
     margin-right: 10px;
+}
+
+#cart{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 760px) {
+    #header{
+        padding: 15px 20px;
+        font-size: 10pt;
+        justify-content: center;
+    }
+
+    #cart{
+        width: 40px;
+        height: 40px;
+    }
+    #nav-links{
+        margin: 0 10px 0 0;
+    }
 }

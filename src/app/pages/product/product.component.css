@@ -18,6 +18,7 @@
 }
 
 .product-images{
+    display: flex;
     width: 50%;
 }
 

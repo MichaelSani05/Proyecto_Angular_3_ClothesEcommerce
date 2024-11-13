@@ -2,12 +2,14 @@
     <h2>Products in {{ category }}</h2>
     <div class="products-grid">
       @for (product of products; track product.id) {
-        <div class="product-card">
-          <img [src]="product.thumbnail" [alt]="product.title">
-          <h3>{{ product.title }}</h3>
-          <p>{{ product.description }}</p>
-          <p class="price">${{ product.price }}</p>
-        </div>
+        <a href="" [routerLink]="['/producto', 1]">
+          <div class="product-card">
+            <img [src]="product.thumbnail" [alt]="product.title">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.description }}</p>
+            <p class="price">${{ product.price }}</p>
+          </div>
+        </a>
       }
     </div>
   </div>

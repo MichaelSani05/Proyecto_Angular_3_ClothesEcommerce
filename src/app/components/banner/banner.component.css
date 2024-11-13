@@ -50,3 +50,9 @@
     width: 130%;
     filter: opacity(0.6);
 }
+
+@media screen and (max-width: 760px) {
+    #banner-texts{
+        padding: 0px;
+    }
+}

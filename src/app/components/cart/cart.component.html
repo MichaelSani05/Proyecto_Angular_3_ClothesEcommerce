@@ -1,0 +1,19 @@
+<div class="cart-panel" [class.open]="isOpen">
+    <span class="close-btn" (click)="closeCart()">&times;</span>
+    <h2>Carrito</h2>
+    <div *ngIf="products.length == 0">
+        <p class="no-products">No tiene productos en el carrito</p>
+    </div>
+    <div class="cart-product shadow" *ngFor="let product of products">
+        <div class="product-img">
+            <a href="" [routerLink]="['producto', product.id]">
+                <img src="{{product.img2}}" alt="">
+            </a>
+        </div>
+        <div class="cart-product-details">
+            <p class="product-name">{{ product.name }}</p>
+            <p class="product-price">Precio: {{ product.price }}</p>
+            <button (click)="removeFromCart(product)" type="button"><fa-icon class="trash-icon" [icon]="faTrashCan"></fa-icon>Delete</button>
+        </div>
+    </div>
+  </div>

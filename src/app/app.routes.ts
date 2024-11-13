@@ -4,6 +4,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { MenComponent } from './pages/men/men.component';
 import { WomenComponent } from './pages/women/women.component';
 import { ProductComponent } from './pages/product/product.component';
+import { APIproductsComponent } from './pages/apiproducts/apiproducts.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent},
@@ -13,5 +14,7 @@ export const routes: Routes = [
     { path: 'women', component: WomenComponent},
     { path: 'producto', component: ProductComponent},
     { path: 'producto/:id', component: ProductComponent},
-    { path: 'producto/:id/:productos', component: ProductComponent}
+    { path: 'producto/:id/:productos', component: ProductComponent},
+    {path: 'category/:categoryName', component: APIproductsComponent},
+    {path: 'producto/:categoryName/:id', component: ProductComponent}
 ];

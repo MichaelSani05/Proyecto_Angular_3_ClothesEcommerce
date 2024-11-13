@@ -11,7 +11,6 @@
 #page-content{
     position: relative;
     width: 90%;
-    max-width: 1399px;
     margin: -50px auto 0px auto;
     background-color: white;
     border-radius: 20px;
@@ -72,6 +71,54 @@
     color: white;
 }
 
+#collections img{
+    width: 100%;
+}
+
+#collections div{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#winter-formal h2, #winter-casual h2{
+    top: 50px;
+    position: absolute;
+    font-size: 40pt;
+    font-weight: bold;
+    width: 50%;
+    color: #d6d6d6;
+}
+
+#winter-formal h2{
+    text-align: right;
+    right: 50px;
+}
+
+#winter-casual, #winter-formal{
+    margin-top: 20px;
+}
+
+#winter-casual h2{
+    text-align: left;
+    left: 50px;
+}
+
+@media screen and (min-width: 1920px){
+    #caracts-grid-1{
+        height: 1000px;
+    }
+
+    #caract-1{
+        background-size: 500px;
+    }
+
+    #caracts-grid-1 h2{
+        font-size: 36pt;
+    }
+
+}
+
 @media screen and (max-width: 760px) {
     #caracts-grid-1{
         grid-template-columns: 1fr 1fr;
@@ -94,5 +141,17 @@
     #caract-3{
         grid-column: 1 / 3;
         grid-row: 3 / 4;
+    }
+
+    #winter-formal h2{
+        font-size: 24pt;
+        top: 25px;
+        right: 25px;
+    }
+
+    #winter-casual h2{
+        font-size: 24pt;
+        top: 25px;
+        left: 25px;
     }
 }
