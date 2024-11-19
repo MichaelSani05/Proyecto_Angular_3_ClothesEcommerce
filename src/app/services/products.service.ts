@@ -87,16 +87,6 @@ export class ProductsService {
       stock: 10,
       img1: "../../../assets/images/women-product-4.jpg", 
       img2: "../../../assets/images/women-product-4-2.jpg"
-    },
-    {
-      id: 9, 
-      category: "TRENDY", 
-      name: "Jersey cuello redondo soft touch", 
-      price: "25,99€",
-      description: "Esta sudadera de algodón premium es perfecta para el uso diario. Con un ajuste cómodo y un diseño clásico, es versátil y duradera.",
-      stock: 10,
-      img1: "../../../assets/images/women-product-4.jpg", 
-      img2: "../../../assets/images/women-product-4-2.jpg"
     }
   ];
 

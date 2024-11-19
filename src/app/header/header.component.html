@@ -1,25 +1,27 @@
 <div id="header">
     <div id="nav">
-        <a href="" [routerLink]="[ '/home']" id="home-link" [routerLinkActive]="['link-active']">
-            <button type="button" class="shadow"><fa-icon class="link-icon" [icon]="faHouse"></fa-icon>Home</button>
-        </a>
-        <ul id="nav-links" class="shadow">
-            <li class="nav-link">
-                <a [routerLink]="[ '/categories']" [routerLinkActive]="['link-active']">
-                    <fa-icon class="link-icon" [icon]="faRectangleList"></fa-icon>Categories
-                </a>
-            </li>
-            <li class="nav-link">
-                <a [routerLink]="[ '/men']" [routerLinkActive]="['link-active']">
-                    <fa-icon class="link-icon" [icon]="faMars"></fa-icon>Men
-                </a>
-            </li>
-            <li class="nav-link">
-                <a [routerLink]="[ '/women']" [routerLinkActive]="['link-active']">
-                    <fa-icon class="link-icon" [icon]="faVenus"></fa-icon>Women
-                </a>
-            </li>
-        </ul>
+        <div id="nav-menu">
+            <a href="" [routerLink]="[ '/home']" id="home-link" [routerLinkActive]="['link-active']">
+                <button type="button" class="shadow"><fa-icon class="link-icon" [icon]="faHouse"></fa-icon>Home</button>
+            </a>
+            <ul id="nav-links" class="shadow">
+                <li class="nav-link">
+                    <a [routerLink]="[ '/categories']" [routerLinkActive]="['link-active']">
+                        <fa-icon class="link-icon" [icon]="faRectangleList"></fa-icon>Categories
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a [routerLink]="[ '/men']" [routerLinkActive]="['link-active']">
+                        <fa-icon class="link-icon" [icon]="faMars"></fa-icon>Men
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a [routerLink]="[ '/women']" [routerLinkActive]="['link-active']">
+                        <fa-icon class="link-icon" [icon]="faVenus"></fa-icon>Women
+                    </a>
+                </li>
+            </ul>
+        </div>
         <button (click)="toggleCart()" id="cart"><fa-icon class="cart-icon" [icon]="faCartShopping"></fa-icon></button>
         <app-cart/>
     </div>

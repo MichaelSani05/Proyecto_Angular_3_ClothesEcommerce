@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductService } from '../../services/product.service';
-import { Product, ProductResponse } from '../../interfaces/product.interface';
+import { Product } from '../../interfaces/product.interface';
 
 @Component({
   selector: 'app-product-list',

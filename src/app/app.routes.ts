@@ -14,7 +14,6 @@ export const routes: Routes = [
     { path: 'women', component: WomenComponent},
     { path: 'producto', component: ProductComponent},
     { path: 'producto/:id', component: ProductComponent},
-    { path: 'producto/:id/:productos', component: ProductComponent},
-    {path: 'category/:categoryName', component: APIproductsComponent},
-    {path: 'producto/:categoryName/:id', component: ProductComponent}
+    { path: 'category/:categoryName', component: APIproductsComponent},
+    { path: 'producto/:categoryName/:id', component: ProductComponent}
 ];
