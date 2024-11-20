@@ -143,15 +143,10 @@
         grid-row: 3 / 4;
     }
 
-    #winter-formal h2{
-        font-size: 24pt;
-        top: 25px;
-        right: 25px;
-    }
-
-    #winter-casual h2{
+    #winter-casual h2, #winter-formal h2{
         font-size: 24pt;
         top: 25px;
         left: 25px;
+        text-align: left;
     }
 }
